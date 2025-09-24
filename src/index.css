@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-stravix-500 to-stravix-600 text-white font-semibold px-6 py-3 rounded-lg hover:from-stravix-600 hover:to-stravix-700 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-stravix-300 text-stravix-700 font-medium px-6 py-3 rounded-lg hover:bg-stravix-50 transition-all duration-200;
+  }
+  
+  .btn-success {
+    @apply bg-gradient-to-r from-success-500 to-success-600 text-white font-semibold px-6 py-3 rounded-lg hover:from-success-600 hover:to-success-700 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-danger {
+    @apply bg-gradient-to-r from-danger-500 to-danger-600 text-white font-semibold px-6 py-3 rounded-lg hover:from-danger-600 hover:to-danger-700 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-info {
+    @apply bg-gradient-to-r from-info-500 to-info-600 text-white font-semibold px-6 py-3 rounded-lg hover:from-info-600 hover:to-info-700 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .card-header {
+    @apply flex items-center justify-between mb-6 pb-4 border-b border-gray-200;
+  }
+  
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200;
+  }
+  
+  .table-row {
+    @apply hover:bg-gray-50 transition-colors duration-150;
+  }
+}
